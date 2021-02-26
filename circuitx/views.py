@@ -1,5 +1,6 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 def gym_Freak(request):
-    return HttpResponse("Time to get Fit!")
+    return render(request, "circuitx/circuit_x.html")
+
