@@ -34,14 +34,24 @@
     <title>CIRCUIT X {% block extra_title %}{% endblock %}</title>  
   </head>
   <body>
-    <header class="container-fluid fixed-top"></header>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"></div>
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Circuit X</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="#">Sign in</a>
+        <a class="nav-link" href="#">Sign up</a>
+
+      </nav>
+    </div>
+  </header>
 
     {% if messages %}
 <div class="message-container"></div>
     {% endif %}
 
-    {% block page_header %}
-    {% endblock %}
 
 
     {% block content %}
