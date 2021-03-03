@@ -1,45 +1,97 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# CutZ
 
-Welcome aoshenye,
+This primary goal of Circuit X isot be provide a website for consumers to find professional athletes so they can get fit.  Consumers will be able to place to choose a trainer, make a payment for their service. That service itself is only offered to consumers that sign up for an account. With the account, consumers will be able to view the trainers that are available and pick and pay for their services. They will also be able to track their usage and show who they have previously picked to be trained by.  Consumers will be able to delete their previous usage and comment on how their session went as well, with all shown on the login page. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## UX
 
-## Gitpod Reminders
+User Story: 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+### Strategy
 
-A blue button should appear to click: *Make Public*,
+The main goal of this project is to provide users with a sleek and simple user experience of reviews and a chance for them to provide their reviews. I have done research and below user stories describe the user needs for my webpage.
 
-Another blue button should appear to click: *Open Browser*.
+User Stories:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+-   As a  an unfit person, I want to  be able to find skilled trainers and make an easy transaction for their services without having to make awkward payments physically before a session.  This will allow me to get more fit and healthy with easy access to a fitness instructor and a simple payment option in the same place. 
 
-A blue button should appear to click: *Make Public*,
+## Features
+-   Navigation bar: Simple and swift and initiated with bootstrap
+- CRUD functionality
+	- The Form on sign up page - simple form. 
+	- reviews page - get_reviews.html - provides users to read all reviews. 
+	- Edit and Delete function provided on the user's profile page. 
+	- Forgotten password function
+- Flash messages provided to warn people when logging in or trying to register. 
+- Buttons: initialized from Bootstrap for sign up and sign in and check out
 
-Another blue button should appear to click: *Open Browser*.
+## Structure
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The main goal of this website is to provide a place where customers can find training and fitness services provided by the professional trainers advertised on the website. 
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Technologies Used
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+-   
+    -   For **HTML**  for the outline of the website and all it pages 
+    - For **CSS** for styling support rather than full styling of website. 
+    - For **Python** for background logic of website. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+	- For **Bootstrap** - creating the layout of the pages, navigation bar and footer.
+	- 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Testing
 
---------
 
-Happy coding!
+
+
+
+
+- Google Chrome - Version 86.0.4240.183 (Official Build) (64-bit)
+
+- Microsoft Edge - Version 86.0.622.63 (Official build) (64-bit)
+
+- Firefox - 75.0 (64 bit)
+
+- The website...
+
+- The site was also tested on the following Devices:
+
+	- Google pixel 3a using Google Chrome on Android 10 iphone xr using Safari on IOS 13.4.1 
+
+## Deployment
+1.  login to heroku
+2.  Create heroku app
+3.  Add heroku with repository by typing in terminal: heroku git: remote -a cdins-msp3-recipe-book
+4.  Create requirements.txt file by typing in terminal 'pip3 freeze > requirements.txt'
+5.  Create Procfile by typing in terminal: 'web: python3 app. py > Procfile'
+6.  Add and push created files to repository by commands: 'git add', 'git commit', 'git push' for github and 'git push heroku master' for heroku.
+
+### For Deployment 
+	1. Link git hub repository to Heroku
+			-click Deploy
+			- got to App connected to GitHub
+			- find my github page
+			- click connect and ensure connection  made. 
+			- scroll down to Automatic Deploys
+			- In the choose a branch to deploy section, click Master
+			- scroll down to Manual deploy and click Deploy Branch.
+			- Wait a few seconds for deployment.   
+
+
+## Credits
+
+### Content
+- Bootstrap used for layout and design of website Particularly the home page is inspired by example themes by [Bootstrap](https://getbootstrap.com/)
+
+### Media
+
+-   The photos used in this site were obtained from ...
+
+### Acknowledgements
+
+-   I received inspiration for this project from code institutes Boutique Ado mini project for inspiration for the CRUD functionality and checkout. [Boutiqe Ado - Mini Project](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/?activate_block_id=block-v1%3ACodeInstitute%2BFSF_102%2BQ1_2020%2Btype%40sequential%2Bblock%40d3188bf68530497aa5fba55d07a9d7d7)
