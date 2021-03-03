@@ -1,6 +1,6 @@
-# CutZ
+# Circuit X
 
-This primary goal of Circuit X isot be provide a website for consumers to find professional athletes so they can get fit.  Consumers will be able to place to choose a trainer, make a payment for their service. That service itself is only offered to consumers that sign up for an account. With the account, consumers will be able to view the trainers that are available and pick and pay for their services. They will also be able to track their usage and show who they have previously picked to be trained by.  Consumers will be able to delete their previous usage and comment on how their session went as well, with all shown on the login page. 
+This primary goal of Circuit X is to be provide a website for consumers to find professional athletes so they can get fit.  Consumers will be able to place to choose a trainer, make a payment for their service. That service itself is only offered to consumers that sign up for an account. With the account, consumers will be able to view the trainers that are available and pick and pay for their services. They will also be able to track their usage and show who they have previously picked to be trained by.  Consumers will be able to delete their previous usage and comment on how their session went as well, with all shown on the login page. 
 
 ## UX
 
