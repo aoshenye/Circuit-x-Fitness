@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block header %}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
+        <ul class="navbar-nav left-side">
+            <li class="nav-item">
+                <a class="nav-link pl-0" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about_us' %}">About us</a>
+            </li>
+        </ul>
+    </div>
+    <a href="{% url 'sign_up' %}" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25 brand-logo">WELCOME
+        BACK {{ user.username }}</a>
+    <div class="navbar-collapse collapse dual-nav w-50 order-2 navbar-right-side">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item nav-button-sign-in-up"><a class="nav-link" href="{% url 'logout' %}">logout</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block page %}
+    <div class="container-fluid main-content-profile">
+        <div class="row profile-content-item">
+                <div class="col-sm-6">
+                    <h3>MEMBER PACKS</h3>
+                    <div class="member-feedback">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="7" id="member-feed"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h3>FEEDBACK</h3>
+                    <div class="member-feedback">
+                            <textarea class="form-control" rows="7" id="feedback"></textarea>
+                    </div>
+                </div>
+        </div>
+    </div>
+{% endblock %}

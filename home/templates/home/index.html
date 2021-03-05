@@ -1,37 +1,38 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+
 {% load static %}
 
-{% block page_header %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar w/ text</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-    </ul>
-    <span class="navbar-text">
-      Navbar text with an inline element
-    </span>
-  </div>
-</nav>
+{% block header %}
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
+            <ul class="navbar-nav left-side">
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="{%  url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about_us' %}">About us</a>
+                </li>
+            </ul>
+        </div>
+        <a href="/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25 brand-logo">CIRCUIT X</a>
+        <div class="navbar-collapse collapse dual-nav w-50 order-2 navbar-right-side">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item nav-button-sign-in-up"><a class="nav-link" href="{% url 'signin' %}">Sign in</a></li>
+                <li class="nav-item nav-button-sign-in-up"><a class="nav-link" href="{% url 'sign_up' %}">Sign up</a></li>
+            </ul>
+        </div>
 {% endblock %}
 
-
-{% block content %}
-    <h1 class="display-4 text-success">It Works</h1>
-<style>
-body {
-  background-image: url('img_girl.jpg');
-}
-</style>
+{% block page %}
+       <div class="container-fluid main-content-home">
+        <div class="row">
+            <div class="col-sm-5">
+                <h2>WELCOME TO THE START OF YOUR CLIMB TO BECOMING A BEAST OF AN ATHLETE</h2><br>
+                <h2>CIRCUIT X IS FOR YOU AND FOR THE BEAST IN YOU</h2><br>
+                <h2>SIGN UP, CHOOSE YOUR TRAINER & LETS GET DOWN TO BUSINESS</h2><br>
+            </div>
+        </div>
+    </div>
 {% endblock %}
