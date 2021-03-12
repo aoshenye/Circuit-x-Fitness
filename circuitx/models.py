@@ -7,8 +7,7 @@ class TrainerSpeciality(Choices):
 
 class Trainer(models.Model):
     name = models.CharField(max_length=254)
-    specialities = models.CharField(max_length=255, choices=TrainerSpeciality.choices)
-    sku = models.CharField(max_length=254, null=True, blank=True)
+    types = models.CharField(max_length=255, choices=TrainerSpeciality.choices)
     description = models.TextField()
     price_per_hour = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
