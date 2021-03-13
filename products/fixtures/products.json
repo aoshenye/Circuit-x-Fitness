@@ -4,27 +4,167 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5001340155",
-      "name": "Arizona Original Bootcut Jeans",
-      "description": "Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
-      "price": 53.99,
-      "rating": 4.6,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "DP0709201205510679M.jpg"
+      "name": "Excercise bands",
+      "description": "Strech excercise bands for deficit workouts",
+      "price": 24.99,
+      "image_url": "media/sprods/Bands.jpg",
+      "image": "Bands.jpg"
     }
   },
-
-
   {
     "pk": 2,
     "model": "products.product",
     "fields": {
-      "sku": "pp5007320233",
-      "name": "St. John's Bay Ikat Sharkbite Tank Top",
-      "description": "Add our tank top to your warm-weather wardrobe, featuring a sharkbite hem and a flowy style that looks great with shorts or skinny jeans. roundneck sharkbite hem rayon washable imported petite: 30\" length misses: 32\" length",
-      "price": 36.99,
-      "rating": 5,
-      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0429201617074742M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-      "image": "DP0429201617074742M.jpg"
+      "sku": "pp5001340155",
+      "name": "Sports Bra & leggings",
+      "description": "Turquoise sports bra with matching leggings",
+      "price": 23.99,
+      "image_url": "media/sprods/bra&leg.jpg",
+      "image": "bra&leg.jpg"
+    }
+  },
+    {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "dipbar",
+      "description": "lightweight dip bar",
+      "price": 19.99,
+      "image_url": "media/sprods/dipbar.jpg",
+      "image": "dipbar.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Full gear gym wear",
+      "description": "Mens full gym wear top and bottom",
+      "price": 24.99,
+      "image_url": "media/sprods/FBGS.jpg",
+      "image": "FBGS.jpg"
+    }
+  },
+    {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "forearm trainer",
+      "description": "strong hold forearm trainer holding weights of up to 50kg",
+      "price": 34.99,
+      "image_url": "media/sprods/forearm.jpg",
+      "image": "forearm.jpg"
+    }
+  },
+    {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Sports Leggings",
+      "description": "Gender-fluid sports leggings",
+      "price": 14.99,
+      "image_url": "media/sprods/genderlegs.jpg",
+      "image": "genderlegs.jpg"
+    }
+  },
+    {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Grey shorts",
+      "description": "Short grey gym shorts with pockets front and back",
+      "price": 17.99,
+      "image_url": "media/sprods/greyshorts.jpg",
+      "image": "greyshorts.jpg"
+    }
+  },
+    {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Gym shark gym wear",
+      "description": "Womens grey cotton top & bottoms",
+      "price": 17.99,
+      "image_url": "media/sprods/GSgymwear.jpg",
+      "image": "GSgymwear.jpg"
+    }
+  },
+    {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Grey cap",
+      "description": "grey under-armour sports cap",
+      "price": 9.99,
+      "image_url": "media/sprods/hat.jpg",
+      "image": "hat.jpg"
+    }
+  },
+      {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Leggings and top",
+      "description": "Black sports top and bottom from Pretty Little Thing",
+      "price": 29.99,
+      "image_url": "media/sprods/legntop.jpg",
+      "image": "legntop.jpg"
+    }
+  },
+    {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Sleeveless top",
+      "description": "Sleevless cotton red top for men",
+      "price": 14.99,
+      "image_url": "media/sprods/sleevless.jpg",
+      "image": "sleevless.jpg"
+    }
+  },
+      {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Multi-Colour sneakers",
+      "description": "Womens Multi-colour sneakers",
+      "price": 34.99,
+      "image_url": "media/sprods/sneakers.jpg",
+      "image": "sneakers.jpg"
+    }
+  },
+      {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Sports bra",
+      "description": "Plain black sports bra excellent for training",
+      "price": 7.99,
+      "image_url": "media/sprods/sportsbra.jpg",
+      "image": "sportsbra.jpg"
+    }
+  },
+      {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Strap set",
+      "description": "Multi-functional Strap-set",
+      "price": 39.99,
+      "image_url": "media/sprods/strapset.jpg",
+      "image": "strapset.jpg"
     }
   }
 ]
