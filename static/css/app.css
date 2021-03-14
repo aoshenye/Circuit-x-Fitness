@@ -119,3 +119,14 @@
 .signin-error-message{
     border:1px solid red!important;
 }
+/*SHOP*/
+.main-content-shop {
+    background-image: url("../media/sprods/Bands.jpg");
+    min-height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}

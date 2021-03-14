@@ -1,1 +1,73 @@
-[{"pk": 1, "model": "products.trainers", "fields": {"name": "Greg", "friendly_name": "Greg", "types": "Upper Body workout", "description": "Total body workout with a focus on uppper body that will leave you lean and buff!", "price_per_hour": "20" }}, {"pk": 2, "model": "products.trainers", "fields": {"name": "Ebony", "types": "HIT", "description": "Early morning hit class to wake you up!", "price_per_hour": "30" }}, {"pk": 3, "model": "products.trainers", "fields": {"name": "Ida", "types": "CORE", "description": "core blasters for your abs short and sweet", "price_per_hour": "25" }}, {"pk": 4, "model": "products.trainers", "fields": {"name": "Wanda", "types": "Pilates/Cardio", "description": "Running and pilates workouts with Wanda with effective techniques adn drills", "price_per_hour": "15" }}, {"pk": 5, "model": "products.trainers", "fields": {"name": "Uche", "types":"Boxercise", "description": "Boxing class with a twist by former pro Uche", "price_per_hour": "30" }}, {"pk": 6, "model": "products.trainers", "fields": {"name": "Ucyk", "types": "Bodybuilding", "description": "Bulk up and lift right with Ucyk", "price_per_hour": "19" }}, {"pk": 7, "model": "products.trainers", "fields": {"name": "Steph", "types": "Yoga", "description": "Vinyasa Flow and Hot yoga with Steph to get your mind and body ready", "price_per_hour": "32" }}]
+[
+  {
+    "pk": 1,
+    "model": "products.trainers",
+    "fields": {
+      "name": "Greg",
+      "friendly_name": "Greg",
+      "types": "Upper Body workout",
+      "description": "Total body workout with a focus on uppper body that will leave you lean and buff!",
+      "price_per_hour": "20"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.trainers",
+    "fields": {
+      "name": "Ebony",
+      "types": "HIT",
+      "description": "Early morning hit class to wake you up!",
+      "price_per_hour": "30"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.trainers",
+    "fields": {
+      "name": "Ida",
+      "types": "CORE",
+      "description": "core blasters for your abs short and sweet",
+      "price_per_hour": "25"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.trainers",
+    "fields": {
+      "name": "Wanda",
+      "types": "Pilates/Cardio",
+      "description": "Running and pilates workouts with Wanda with effective techniques adn drills",
+      "price_per_hour": "15"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.trainers",
+    "fields": {
+      "name": "Uche",
+      "types": "Boxercise",
+      "description": "Boxing class with a twist by former pro Uche",
+      "price_per_hour": "30"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.trainers",
+    "fields": {
+      "name": "Ucyk",
+      "types": "Bodybuilding",
+      "description": "Bulk up and lift right with Ucyk",
+      "price_per_hour": "19"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.trainers",
+    "fields": {
+      "name": "Steph",
+      "types": "Yoga",
+      "description": "Vinyasa Flow and Hot yoga with Steph to get your mind and body ready",
+      "price_per_hour": "32"
+    }
+  }
+]
