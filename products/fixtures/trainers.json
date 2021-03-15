@@ -1,7 +1,7 @@
 [
   {
     "pk": 1,
-    "model": "products.trainers",
+    "model": "circuitx.trainers",
     "fields": {
       "name": "Greg",
       "friendly_name": "Greg",
@@ -12,7 +12,7 @@
   },
   {
     "pk": 2,
-    "model": "products.trainers",
+    "model": "circuitx.trainers",
     "fields": {
       "name": "Ebony",
       "types": "HIT",
@@ -22,7 +22,7 @@
   },
   {
     "pk": 3,
-    "model": "products.trainers",
+    "model": "circuitx.trainers",
     "fields": {
       "name": "Ida",
       "types": "CORE",
@@ -32,7 +32,7 @@
   },
   {
     "pk": 4,
-    "model": "products.trainers",
+    "model": "circuitx.trainers",
     "fields": {
       "name": "Wanda",
       "types": "Pilates/Cardio",
@@ -42,7 +42,7 @@
   },
   {
     "pk": 5,
-    "model": "products.trainers",
+    "model": "circuitx.trainers",
     "fields": {
       "name": "Uche",
       "types": "Boxercise",
@@ -52,7 +52,7 @@
   },
   {
     "pk": 6,
-    "model": "products.trainers",
+    "model": "circuitx.trainers",
     "fields": {
       "name": "Ucyk",
       "types": "Bodybuilding",
@@ -62,7 +62,7 @@
   },
   {
     "pk": 7,
-    "model": "products.trainers",
+    "model": "circuitx.trainers",
     "fields": {
       "name": "Steph",
       "types": "Yoga",
