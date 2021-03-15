@@ -25,10 +25,10 @@
     min-height: 100vh;
     background-image: url(../media/Athelete_bacground.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: cover;
     color: white;
     padding-top: 30vh;
-    text-align: center;
+    text-align: left;
     padding-bottom: 20px;
 }
 
@@ -36,7 +36,7 @@
     min-height: 100vh;
     background-image: url(../media/aboutusback.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     color: white;
     padding-top: 50px;
     text-align: center;
@@ -44,31 +44,31 @@
 }
 
 .main-content-about-us input, textarea {
-    background-color: lightgrey !important;
+    background-color: white !important;
 }
 
 .main-content-about-us button {
-    background-color: lightgrey;
+    background-color: white;
     color: black;
 }
 
 .main-content-signup {
     min-height: 100vh;
     background-image: url(../media/runing.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     color: white;
     padding-top: 20vh;
-    text-align: center;
+    text-align: left;
     padding-bottom:20px;
+   
 }
 
 .main-content-signup input {
-    background-color: lightgrey !important;
+    background-color: rgb(255, 255, 255) !important;
 }
 
 .main-content-signup button {
-    background-color: lightgrey;
+    background-color: white;
     color: black;
 }
 
@@ -76,19 +76,20 @@
     min-height: 100vh;
     background-image: url(../media/aboutusback.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     color: white;
     padding-top: 20vh;
-    text-align: center;
+    text-align: left;
     padding-bottom: 20px;
+    
 }
 
 .main-content-signin input {
-    background-color: lightgrey !important;
+    background-color: white !important;
 }
 
 .main-content-signin button {
-    background-color: lightgrey;
+    background-color: white;
     color: black;
 }
 .main-content-profile{
