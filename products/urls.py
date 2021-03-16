@@ -6,6 +6,6 @@ from shop.views import shop
 from trainers.views import Ptrainers 
 
 urlpatterns = [
-    path('shop/', views.shop, name='shop'),
-    path('', Ptrainers, name='Ptrainers')
+    path('trainers', Ptrainers, name='Ptrainers'),
+    path('shop/', views.shop, name='shop')
 ]
