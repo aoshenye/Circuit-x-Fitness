@@ -23,9 +23,6 @@ def about_us(request):
     return render(request,'home/about_us.html')
 
 
-def shop(request):
-    return render(request, 'home/shop.html')
-
 
 def signin(request):
     if request.method == "POST":
