@@ -101,10 +101,10 @@
     color: black;
 }
 .main-content-profile{
-     min-height: 100vh;
-    background-image: url(../media/shopbackground.jpg);
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/shopbackground.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     color: white;
     padding-top: 20vh;
     text-align: center;
@@ -130,7 +130,6 @@
 }
 /*SHOP*/
 .main-content-shop {
-    background-image: url("../media/sprods/Bands.jpg");
     min-height: 100vh;
     background-color: black;
     background-repeat: no-repeat;

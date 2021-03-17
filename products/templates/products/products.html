@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
+            <ul class="navbar-nav left-side">
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="{%  url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about_us' %}">About us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'shop' %}">Shop</a>
+                </li>
+            </ul>
+        </div>
+        <a href="/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25 brand-logo">CIRCUIT X</a>
+        <div class="navbar-collapse collapse dual-nav w-50 order-2 navbar-right-side">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item nav-button-sign-in-up"><a class="nav-link" href="{% url 'signin' %}">Sign in</a></li>
+                <li class="nav-item nav-button-sign-in-up"><a class="nav-link" href="{% url 'sign_up' %}">Sign up</a></li>
+            </ul>
+        </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {{ products }}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
