@@ -21,6 +21,7 @@
     font-size: 30px !important;
 }
 
+/*Home*/
 .main-content-home {
     min-height: 100vh;
     background-image: url(../media/Athelete_bacground.jpg);
@@ -31,6 +32,13 @@
     text-align: left;
     padding-bottom: 20px;
 }
+
+.main-content-home {
+    background-color: black;
+}
+
+
+
 
 .main-content-about-us {
     min-height: 100vh;
