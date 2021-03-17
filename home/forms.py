@@ -8,7 +8,7 @@ class UserLoginForm(AuthenticationForm):
         for visible in self.visible_fields():
             visible.field.widget.attrs['class'] = 'form-control'
 
-    username = forms.CharField(label='username or email')
+    username = forms.CharField(label='Username or Email')
     password = forms.CharField(widget=forms.PasswordInput)
 
 #Create your forms here

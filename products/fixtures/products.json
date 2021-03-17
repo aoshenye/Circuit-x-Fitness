@@ -3,7 +3,6 @@
     "pk": 1,
     "model": "products.product",
     "fields": {
-      "sku": "pp5001340155",
       "name": "Excercise bands",
       "description": "Strech excercise bands for deficit workouts",
       "price": 24.99,
@@ -15,84 +14,55 @@
     "pk": 2,
     "model": "products.product",
     "fields": {
-      "sku": "pp5001340155",
-      "name": "Sports Bra & leggings",
+      "name": "Black Sports Bra",
       "description": "Turquoise sports bra with matching leggings",
       "price": 23.99,
-      "image_url": "media/sprods/bra&leg.jpg",
-      "image": "bra&leg.jpg"
+      "image_url": "media/sportsbra.jpg",
+      "image": "sportsbra.jpg"
     }
   },
     {
     "pk": 3,
     "model": "products.product",
     "fields": {
-      "sku": "pp5001340155",
-      "name": "dipbar",
-      "description": "lightweight dip bar",
+      "name": "Under Armour Hat",
+      "description": "Gym Under armour hat. Sweat resistant",
       "price": 19.99,
-      "image_url": "media/dipbar.jpg",
-      "image": "dipbar.jpg"
+      "image_url": "media/hat.jpg",
+      "image": "hat.jpg"
     }
   },
   {
     "pk": 4,
     "model": "products.product",
     "fields": {
-      "sku": "pp5001340155",
       "name": "Full gear gym wear",
-      "description": "Mens full gym wear top and bottom",
-      "price": 24.99,
-      "image_url": "media/FBGS.jpg",
-      "image": "FBGS.jpg"
+      "description": "Light-weight sneakers for running and jogging and circuit classes. Lower cushioned and flexible for all purpose use in sports.",
+      "price": 34.99,
+      "image_url": "media/sneakers.jpg",
+      "image": "sneakers.jpg"
     }
   },
     {
     "pk": 5,
     "model": "products.product",
     "fields": {
-      "sku": "pp5001340155",
-      "name": "forearm trainer",
-      "description": "strong hold forearm trainer holding weights of up to 50kg",
-      "price": 34.99,
-      "image_url": "media/sprods/forearm.jpg",
-      "image": "forearm.jpg"
+      "name": "Strapset",
+      "description": "Multi-functional strapset with set bag",
+      "price": 24.99,
+      "image_url": "media/strapset.jpg",
+      "image": "strapset.jpg"
     }
   },
     {
     "pk": 6,
     "model": "products.product",
     "fields": {
-      "sku": "pp5001340155",
-      "name": "Sports Leggings",
-      "description": "Gender-fluid sports leggings",
-      "price": 14.99,
-      "image_url": "media/sprods/genderlegs.jpg",
-      "image": "genderlegs.jpg"
-    }
-  },
-    {
-    "pk": 7,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5001340155",
-      "name": "Grey shorts",
-      "description": "Short grey gym shorts with pockets front and back",
-      "price": 17.99,
-      "image_url": "media/sprods/greyshorts.jpg",
-      "image": "greyshorts.jpg"
-    }
-  },
-    {
-    "pk": 8,
-    "model": "products.product",
-    "fields": {
-      "sku": "pp5001340155",
       "name": "Gym shark gym wear",
-      "description": "Womens grey cotton top & bottoms",
+      "description": "Lightweight dip bar that supports up to 60kg.",
       "price": 17.99,
-      "image_url": "media/sprods/GSgymwear.jpg",
-      "image": "GSgymwear.jpg"
+      "image_url": "media/dipbar.jpg",
+      "image": "dipbar.jpg"
     }
   }
 ]

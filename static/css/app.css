@@ -62,7 +62,7 @@
 
 .main-content-signup {
     min-height: 100vh;
-    background-image: url(../media/runing.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/runing.jpg);
     background-size: cover;
     color: white;
     padding-top: 20vh;
@@ -82,7 +82,7 @@
 
 .main-content-signin {
     min-height: 100vh;
-    background-image: url(../media/aboutusback.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/aboutusback.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
