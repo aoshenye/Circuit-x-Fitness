@@ -23,6 +23,9 @@ def about_us(request):
     return render(request,'home/about_us.html')
 
 
+def products(request):
+    return render(request, '/products.html')
+
 
 def signin(request):
     if request.method == "POST":

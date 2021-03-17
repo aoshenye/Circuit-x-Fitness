@@ -472,46 +472,43 @@
     <entry file="file://$PROJECT_DIR$/media/yin.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/Bands.jpg">
+    <entry file="file://$PROJECT_DIR$/static/media/Bands.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/bra&leg.jpg">
+     <entry file="file://$PROJECT_DIR$/static/media/bra&leg.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/dipbar.jpg">
+     <entry file="file://$PROJECT_DIR$/static/media/dipbar.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/FBGS.jpg">
+    <entry file="file://$PROJECT_DIR$/static/media/forearm.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/forearm.jpg">
+     <entry file="file://$PROJECT_DIR$/static/media/genderlegs.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/genderlegs.jpg">
+     <entry file="file://$PROJECT_DIR$/static/media/greyshorts.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/greyshorts.jpg">
+     <entry file="file://$PROJECT_DIR$/static/media/GSgymwear.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/GSgymwear.jpg">
+     <entry file="file://$PROJECT_DIR$/static/media/hat.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/hat.jpg">
+     <entry file="file://$PROJECT_DIR$/static/media/legntop.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/legntop.jpg">
+     <entry file="file://$PROJECT_DIR$/static/media/sleevless.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/sleevless.jpg">
+     <entry file="file://$PROJECT_DIR$/static/media/sneakers.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/sneakers.jpg">
+     <entry file="file://$PROJECT_DIR$/static/media/sportsbra.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-     <entry file="file://$PROJECT_DIR$/media/sportsbra.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-     <entry file="file://$PROJECT_DIR$/media/strapset.jpg">
+     <entry file="file://$PROJECT_DIR$/static/media/strapset.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
 
