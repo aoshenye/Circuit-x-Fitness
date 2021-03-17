@@ -31,7 +31,7 @@
       "name": "dipbar",
       "description": "lightweight dip bar",
       "price": 19.99,
-      "image_url": "media/sprods/dipbar.jpg",
+      "image_url": "media/dipbar.jpg",
       "image": "dipbar.jpg"
     }
   },
@@ -43,7 +43,7 @@
       "name": "Full gear gym wear",
       "description": "Mens full gym wear top and bottom",
       "price": 24.99,
-      "image_url": "media/sprods/FBGS.jpg",
+      "image_url": "media/FBGS.jpg",
       "image": "FBGS.jpg"
     }
   },
