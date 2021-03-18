@@ -6,7 +6,7 @@
       "name": "Excercise bands",
       "description": "Strech excercise bands for deficit workouts",
       "price": 24.99,
-      "image_url": "static/media/sprods/Bands.jpg",
+      "image_url": "media/sprods/Bands.jpg",
       "image": "Bands.jpg"
     }
   },
@@ -17,7 +17,7 @@
       "name": "Black Sports Bra",
       "description": "Turquoise sports bra with matching leggings",
       "price": 23.99,
-      "image_url": "static/media/sportsbra.jpg",
+      "image_url": "media/sportsbra.jpg",
       "image": "sportsbra.jpg"
     }
   },
@@ -28,7 +28,7 @@
       "name": "Under Armour Hat",
       "description": "Gym Under armour hat. Sweat resistant",
       "price": 19.99,
-      "image_url": "static/media/hat.jpg",
+      "image_url": "media/hat.jpg",
       "image": "hat.jpg"
     }
   },
@@ -39,7 +39,7 @@
       "name": "Full gear gym wear",
       "description": "Light-weight sneakers for running and jogging and circuit classes. Lower cushioned and flexible for all purpose use in sports.",
       "price": 34.99,
-      "image_url": "static/media/sneakers.jpg",
+      "image_url": "media/sneakers.jpg",
       "image": "sneakers.jpg"
     }
   },
@@ -50,7 +50,7 @@
       "name": "Strapset",
       "description": "Multi-functional strapset with set bag",
       "price": 24.99,
-      "image_url": "static/media/strapset.jpg",
+      "image_url": "media/strapset.jpg",
       "image": "strapset.jpg"
     }
   },
@@ -61,7 +61,7 @@
       "name": "Dip Bar",
       "description": "Lightweight dip bar that supports up to 60kg.",
       "price": 17.99,
-      "image_url": "static/media/dipbar.jpg",
+      "image_url": "media/dipbar.jpg",
       "image": "dipbar.jpg"
     }
   }
