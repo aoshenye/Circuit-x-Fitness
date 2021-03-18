@@ -58,7 +58,7 @@
     "pk": 6,
     "model": "products.product",
     "fields": {
-      "name": "Gym shark gym wear",
+      "name": "Dip Bar",
       "description": "Lightweight dip bar that supports up to 60kg.",
       "price": 17.99,
       "image_url": "static/media/dipbar.jpg",
