@@ -3,9 +3,9 @@
     "pk": 1,
     "model": "trainers.trainer",
     "fields": {
-      "name": "Greg",
-      "types": "Upper Body workout",
-      "description": "Total body workout with a focus on uppper body that will leave you lean and buff!",
+      "name": "Nina",
+      "types": "Full Body workout",
+      "description": "Total body workout with a focus on strength that will leave you lean and buff!",
       "price_per_hour": "20"
     }
   },
@@ -15,17 +15,17 @@
     "fields": {
       "name": "Ebony",
       "types": "HIT",
-      "description": "Early morning hit class to wake you up!",
-      "price_per_hour": "30"
+      "description": "Early morning Hit class to wake you up before the day starts and after for those with busier schedules. Ebony combines calisthenics with short but sharp workouts. Join in with Ebony!",
+      "price_per_hour": "25"
     }
   },
   {
     "pk": 3,
     "model": "trainers.trainer",
     "fields": {
-      "name": "Ida",
+      "name": "Kim",
       "types": "CORE",
-      "description": "core blasters for your abs short and sweet",
+      "description": "core blasters for your abs short and sweet but effective training with Kim which will leave you with a rock hard core and blasted abs. Jump in with Kim!",
       "price_per_hour": "25"
     }
   },
@@ -33,9 +33,9 @@
     "pk": 4,
     "model": "trainers.trainer",
     "fields": {
-      "name": "Ida",
-      "types": "CORE",
-      "description": "core blasters for your abs short and sweet",
+      "name": "Yin",
+      "types": "Calisthenics",
+      "description": "Full body Calisthenics with Yin. She has 5 years experience and will challeneg what you think your body can do. Join her on the journey",
       "price_per_hour": "25"
     }
   },
@@ -46,17 +46,27 @@
       "name": "Ida",
       "types": "CORE",
       "description": "core blasters for your abs short and sweet",
-      "price_per_hour": "25"
+      "price_per_hour": "19"
     }
   },
   {
     "pk": 6,
     "model": "trainers.trainer",
     "fields": {
-      "name": "Wanda",
-      "types": "Pilates/Cardio",
-      "description": "Running and pilates workouts with Wanda with effective techniques adn drills",
-      "price_per_hour": "15"
+      "name": "Uche",
+      "types": "Pilates/Martial Arts",
+      "description": "Multi-functional fitness training with Uche who has a 7 years experience in 4 martial arts forms as well as pilates. Contact Uche and find out about the his training schedules and get better!",
+      "price_per_hour": "21"
+    }
+  },
+    {
+    "pk": 7,
+    "model": "trainers.trainer",
+    "fields": {
+      "name": "Mickey",
+      "types": "Running",
+      "description": "Join Mickeys run club through your city. Mickey puts the fun in run club but also makes it more tough adn exciting. Find out how he does this!",
+      "price_per_hour": "20"
     }
   }
 ]
