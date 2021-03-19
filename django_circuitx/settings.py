@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'home',
     'products',
-    'circuitx'
+    'trainers',
 ]
 
 MIDDLEWARE = [

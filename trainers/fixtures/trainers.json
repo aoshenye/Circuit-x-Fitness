@@ -1,10 +1,9 @@
 [
   {
     "pk": 1,
-    "model": "circuitx.trainer",
+    "model": "trainers.trainer",
     "fields": {
       "name": "Greg",
-      "friendly_name": "Greg",
       "types": "Upper Body workout",
       "description": "Total body workout with a focus on uppper body that will leave you lean and buff!",
       "price_per_hour": "20"
@@ -12,7 +11,7 @@
   },
   {
     "pk": 2,
-    "model": "circuitx.trainer",
+    "model": "trainers.trainer",
     "fields": {
       "name": "Ebony",
       "types": "HIT",
@@ -22,7 +21,27 @@
   },
   {
     "pk": 3,
-    "model": "circuitx.trainer",
+    "model": "trainers.trainer",
+    "fields": {
+      "name": "Ida",
+      "types": "CORE",
+      "description": "core blasters for your abs short and sweet",
+      "price_per_hour": "25"
+    }
+  },
+    {
+    "pk": 4,
+    "model": "trainers.trainer",
+    "fields": {
+      "name": "Ida",
+      "types": "CORE",
+      "description": "core blasters for your abs short and sweet",
+      "price_per_hour": "25"
+    }
+  },
+      {
+    "pk": 5,
+    "model": "trainers.trainer",
     "fields": {
       "name": "Ida",
       "types": "CORE",
@@ -31,8 +50,8 @@
     }
   },
   {
-    "pk": 4,
-    "model": "circuitx.trainer",
+    "pk": 6,
+    "model": "trainers.trainer",
     "fields": {
       "name": "Wanda",
       "types": "Pilates/Cardio",
