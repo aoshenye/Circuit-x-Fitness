@@ -46,11 +46,11 @@
                             <div class="card">
                                 <div class="card-body text-center">
                                     {% if trainer.image %}
-                                    <a href="{% url 'trainer_detail' trainer_id %}" class="btn btn-primary btn-sm">
+                                    <a href="{% url 'trainer_detail' trainer.id %}" class="btn btn-primary btn-sm">
                                     <img class=" img-fluid" src="{{ trainer.image.url }}" alt="{{ trainer.name }}">
                                     </a>
                                     {% else %}
-                                    <a href="{% url 'trainer_detail' trainer_id %}" class="btn btn-primary btn-sm">
+                                    <a href="{% url 'trainer_detail' trainer.id %}" class="btn btn-primary btn-sm">
                                     <p><img class=" img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ trainer.name }}"></p>
                                     </a>
                                     {% endif %}

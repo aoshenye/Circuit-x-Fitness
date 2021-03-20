@@ -11,4 +11,6 @@ class TrainerAdmin(admin.ModelAdmin):
         'price_per_hour',  
     )
     
+    ordering = ('name',)
+    
 admin.site.register(Trainer, TrainerAdmin)
