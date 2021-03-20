@@ -65,7 +65,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/templates/home/profile.html">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/profile.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
               <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
@@ -74,7 +74,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/templates/home/signin.html">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/signin.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="714">
               <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
@@ -83,7 +83,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/templates/home/sign_up.html">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/sign_up.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
               <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
@@ -150,7 +150,7 @@
         <option value="$PROJECT_DIR$/home/urls.py" />
         <option value="$PROJECT_DIR$/home/views.py" />
         <option value="$PROJECT_DIR$/django_circuitx/settings.py" />
-        <option value="$PROJECT_DIR$/home/templates/home/profile.html" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/profile.html" />
       </list>
     </option>
   </component>
@@ -631,7 +631,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/templates/home/profile.html">
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />

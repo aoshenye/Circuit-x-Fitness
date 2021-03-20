@@ -60,7 +60,4 @@ def sign_up(request):
         context = {'form': form}
     return render(request, 'home/sign_up.html', context)
 
-@login_required()
-def profile(request):
-    return render(request,'home/profile.html')
 

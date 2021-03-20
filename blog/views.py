@@ -1,4 +1,17 @@
-from django.shortcuts import render
+from django.views import generic
+from .models import Post
+from django.contrib.auth.decorators import login_required
 
-# Create your views here.
 
+class PostList(generic.ListView):
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'profile.html'
+
+class PostDetail(generic.DetailView):
+    model = Post
+    template_name = 'post_detail.html'
+
+
+@login_required()
+def profile(request):
+    return render(request,'blog/profile.html')
