@@ -17,6 +17,9 @@
                 <li class="nav-item">
                 <a  class="nav-link" href="{% url 'products' %}">Shop</a>
                 </li>
+                <li class="nav-item">
+                <a  class="nav-link" href="{% url 'trainers' %}">Trainers</a>
+                </li>  
             </ul>
         </div>
         <a href="/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25 brand-logo">CIRCUIT X</a>
@@ -43,11 +46,11 @@
                             <div class="card">
                                 <div class="card-body text-center">
                                     {% if trainer.image %}
-                                    <a href="" class="btn btn-primary btn-sm">
-                                    <p><img class=" img-fluid" src="{{ trainer.image.url }}" alt="{{ trainer.name }}"></p>
+                                    <a href="{% url 'trainer_detail' trainer_id %}" class="btn btn-primary btn-sm">
+                                    <img class=" img-fluid" src="{{ trainer.image.url }}" alt="{{ trainer.name }}">
                                     </a>
                                     {% else %}
-                                    <a href="" class="btn btn-primary btn-sm">
+                                    <a href="{% url 'trainer_detail' trainer_id %}" class="btn btn-primary btn-sm">
                                     <p><img class=" img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ trainer.name }}"></p>
                                     </a>
                                     {% endif %}
@@ -63,6 +66,7 @@
                                 <div class="card-body text-center mt-4">
                                     <h4 class="card-title">{{ trainer.types }}</h4>
                                     <p class="card-text">{{ trainer.description }}</p>
+                                    <h5 class="card-text">{{ trainer.price_per_hour }}</h5>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
                                             <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com">

@@ -37,22 +37,22 @@
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
-                                 {% if product.image %}
-                                    <a href="{{ product.image.url }}" target="_blank">
-                                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                 {% if trainer.image %}
+                                    <a href="{{ trainer.image.url }}" target="_blank">
+                                        <img class="card-img-top img-fluid" src="{{ trainer.image.url }}" alt="{{ trainer.name }}">
                                     </a>
                                     {% else %}
                                     <a href="">
-                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ trainer.name }}">
                                     </a>
                                     {% endif %}
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-                 <div class="product-details-container mb-5 mt-md-5">
-                    <p class="mb-0">{{ product.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                    <p class="mt-3">{{ product.description }}</p>
+                 <div class="trainer-details-container mb-5 mt-md-5">
+                    <p class="mb-0">{{ trainer.name }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold">${{ trainer.price_per_hour }}</p>
+                    <p class="mt-3">{{ trainer.description }}</p>
                 </div>           
         </div>
     </div>   
