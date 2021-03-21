@@ -1,6 +1,6 @@
+from django.shortcuts import render
 from django.contrib import messages
-from django.http import HttpResponse
-from django.urls import reverse
+from django.shortcuts import render
 
 # Create your views here.
 

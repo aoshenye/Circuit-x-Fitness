@@ -1,4 +1,5 @@
 from django.views import generic
+from django.shortcuts import render
 from .models import Post
 from .forms import NewUserForm, UserLoginForm
 from django.contrib.auth.decorators import login_required
@@ -10,6 +11,7 @@ from django.template.loader import render_to_string
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.encoding import force_bytes, force_text
 from django.core.mail import EmailMessage
+from django.http import HttpResponse
 
 
 
@@ -34,12 +36,12 @@ def signin(request):
         form = UserLoginForm(request, data=request.POST)
         print(form)
         if form.is_valid():
-            username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
             user = authenticate(username=username, password=password)
             if user is not None:
                 if user.is_active == True:
-                    login(request,user)
+                    login(request, user)
                     return redirect('profile')
                 else:
                     messages.error("Please confirm your email!")
@@ -47,17 +49,17 @@ def signin(request):
                 messages.error(request,"Invalid username or password")
         else:
             messages.error(request,"Invalid username or password")
-    form = UserLoginForm
+    form = UserLoginForm()
     return render(request,'blog/signin.html', locals())
 
-    def sign_up(request):
-        form = NewUserForm
-        context = {'form' : form}
-        if request.method == 'POST':
-            form = NewUserForm(request.POST)
-            if form.is_valid():
-                user = form.save()
-                user.is_active = True
-                return redirect('signin')
-            context = {'form': form}
-        return render(request, 'blog/sign_up.html', context)
+def sign_up(request):
+    form = NewUserForm
+    context = {'form' : form}
+    if request.method == 'POST':
+        form = NewUserForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            user.is_active = True
+            return redirect('signin')
+        context = {'form': form}
+    return render(request, 'blog/sign_up.html', context)
