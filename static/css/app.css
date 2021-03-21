@@ -100,9 +100,24 @@
     background-color: white;
     color: black;
 }
+
+/*PROFILE*/
+
+.masthead {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    background-color: black;
+    color: wheat;
+}
+
+.card mb-4 {
+    box-shadow: 0 16px 48px #E3E7EB;
+    }
+
+
 .main-content-profile{
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/shopbackground.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -113,7 +128,7 @@
 .profile-content-item{
     margin-top:20vh;
     padding-top:20px;
-    background-color: white;
+    background-color: black;
     color:black;
     margin-left:30px;
     margin-right: 30px;
