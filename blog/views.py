@@ -26,6 +26,10 @@ class PostDetail(generic.DetailView):
     template_name = 'post_detail.html'
 
 
+def profile_index(request):
+    return render(request,'blog/profile_index.html')
+
+
 @login_required()
 def profile(request):
     return render(request,'blog/profile.html')
@@ -65,3 +69,5 @@ def sign_up(request):
             return redirect('signin')
         context = {'form': form}
     return render(request, 'blog/sign_up.html', context)
+
+
