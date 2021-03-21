@@ -28,7 +28,7 @@ class PostDetail(generic.DetailView):
 
 @login_required()
 def profile(request):
-    return (request,'blog/profile.html')
+    return render(request,'blog/profile.html')
 
 
 def signin(request):
@@ -36,9 +36,11 @@ def signin(request):
         form = UserLoginForm(request, data=request.POST)
         print(form)
         if form.is_valid():
+            print("Valid")
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
             user = authenticate(username=username, password=password)
+            print(user)
             if user is not None:
                 if user.is_active == True:
                     login(request, user)

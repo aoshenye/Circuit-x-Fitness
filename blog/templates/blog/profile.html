@@ -32,7 +32,7 @@
 {% endblock %}
 
 {% block content %}
-header class="masthead">
+<header class="masthead">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -59,8 +59,7 @@ header class="masthead">
                     <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
                 </div>
             </div>
-
-
+            {% endfor %}
 {% endblock %}
 
 
