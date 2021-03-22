@@ -10,5 +10,6 @@ urlpatterns = [
     path('signin', views.signin, name='signin'),
     path('sign_up', views.sign_up, name='sign_up'),
     path('logout', auth_views.LogoutView.as_view(), name='logout'),
-    path('profile_index', views.profile_index, name='profile_index')
+    path('profile_index', views.profile_index, name='profile_index'),
+    path('<slug:slug>/', views.post_detail, name='post_detail')
 ]
