@@ -49,6 +49,7 @@
                                     </td>
                                     <td class="py-3 w-25">
                                          <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+                                            
                                             {% csrf_token %}
                                             <div class="form-group">
                                                 <div class="input-group">
@@ -130,17 +131,20 @@
     </div>
 {% endblock %}
 
-
+{% block extra_js %}
 <script type="text/javascript">
     $('.update-link').click(function(e) {
+        console.log('clicked');
         var form = $(this).prev('.update-form');
         form.submit();
     })
 
     $('.remove-item').click(function(e) {
+        console.log('clicked remove');
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)
          .done(function() {
@@ -148,3 +152,4 @@
          });
     })
 </script>
+{% endblock %}
