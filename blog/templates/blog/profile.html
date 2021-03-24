@@ -5,93 +5,88 @@
 
 
 {% block page %}
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 left  top">
-      <div class="card-body">
-        <h1>{% block title %} {{ post.title }} {% endblock title %}</h1>
-        <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
-        <p class="card-text ">{{ post.content | safe }}</p>
-      </div>
-    </div>
-   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 card mb-4  mt-3 ">
+                <div class="card-body">
+                    <!-- comments -->
+                    <h2>{{ comment_personal.count }} comments</h2>
 
-    <div class="col-md-8 card mb-4  mt-3 ">
-      <div class="card-body">
-        <!-- comments -->
-        <h2>{{ comments.count }} comments</h2>
-
-        {% for comment in comments %}
-        <div class="comments" style="padding: 10px;">
-          <p class="font-weight-bold">
-            {{ comment.name }}
-            <span class=" text-muted font-weight-normal">
-              {{ comment.created_on }}
-            </span>
-          </p>
-          {{ comment.body | linebreaks }}
+                    {% for comment in comment_personal %}
+                        <div class="comments" style="padding: 10px;">
+                            <p class="font-weight-bold">
+                                {{ comment.title }}
+                                <span class=" text-muted font-weight-normal">
+                                  {{ comment.created_on }}
+                                </span>
+                                <a href="/profile/comment/edit/{{ comment.id }}">Edit</a>
+                                <a href="/profile/comment/delete/{{ comment.id }}">Delete</a>
+                            </p>
+                            {{ comment.content | linebreaks }}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-12 card mb-4  mt-3 ">
+                <div class="card-body">
+                    {% if new_comment %}
+                        <div class="alert alert-success" role="alert">
+                            Your comment is awaiting moderation
+                        </div>
+                    {% else %}
+                        <h3>Leave a comment</h3>
+                        <form method="post" style="margin-top: 1.3em;">
+                            {% csrf_token %}
+                            {{ comment_form.as_p }}
+                            <button type="submit" class="btn btn-primary  btn-sm">Add Comment</button>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
         </div>
-        {% endfor %}
-      </div>
     </div>
-    <div class="col-md-8 card mb-4  mt-3 ">
-      <div class="card-body">
-        {% if new_comment %}
-        <div class="alert alert-success" role="alert">
-          Your comment is awaiting moderation
-        </div>
-        {% else %}
-        <h3>Leave a comment</h3>
-        <form method="post" style="margin-top: 1.3em;">
-          {{ comment_form.as_p }}
-          {% csrf_token %}
-          <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
-        </form>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-</div>
 {% endblock %}
 
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="{% url 'profile' %}">Django central</a>
-                <a class="navbar-brand" href="{% url 'profile_index' %}">profile_index</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        {% block blog %}
-        <!-- Content Goes here -->
-        {% endblock %}
-        {% block sidebar %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'profile' %}">Django central</a>
+        <a class="navbar-brand" href="{% url 'profile_index' %}">profile_index</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+            </ul>
+        </div>
+    </div>
+</nav>
+{% block blog %}
+    <!-- Content Goes here -->
+{% endblock %}
+{% block sidebar %}
 
-<style>
-        .card{
+    <style>
+        .card {
             box-shadow: 0 16px 48px #E3E7EB;
         }
-       
-</style>
 
-<!-- Sidebar Widgets Column -->
-<div class="col-md-4 float-right ">
-<div class="card my-4">
-        <h5 class="card-header">About Us</h5>
-    <div class="card-body">
-        <p class="card-text"> This awesome blog is made on the top of our Favourite full stack Framework 'Django', follow up the tutorial to learn how we made it..!</p>
-        <a href="https://djangocentral.com/building-a-blog-application-with-django"
-           class="btn btn-danger">Know more!</a>
+    </style>
+
+    <!-- Sidebar Widgets Column -->
+    <div class="col-md-4 float-right ">
+        <div class="card my-4">
+            <h5 class="card-header">About Us</h5>
+            <div class="card-body">
+                <p class="card-text"> This awesome blog is made on the top of our Favourite full stack Framework
+                    'Django', follow up the tutorial to learn how we made it..!</p>
+                <a href="https://djangocentral.com/building-a-blog-application-with-django"
+                   class="btn btn-danger">Know more!</a>
+            </div>
+        </div>
     </div>
-</div>
-</div>
 {% endblock %}
 
 

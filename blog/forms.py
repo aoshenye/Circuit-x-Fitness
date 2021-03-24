@@ -1,7 +1,8 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
-from .models import Comment
+from .models import Comment, Whole_comment
+
 from django import forms
 
 
@@ -47,6 +48,18 @@ class NewUserForm(UserCreationForm):
 
 
 class CommentForm(forms.ModelForm):
+    title = forms.CharField(label="", widget=forms.TextInput(
+        attrs={
+            'class': 'form-control',
+            'placeholder': 'Comment title here !',
+        }))
+    content = forms.CharField(label="", widget=forms.Textarea(
+        attrs={
+            'class': 'form-control',
+            'placeholder': 'Comment content here !',
+            'rows': 4,
+            'cols': 50
+        }))
     class Meta:
-        model = Comment
-        fields = ('name', 'email', 'body')
+        model = Whole_comment
+        fields = ['title', 'content']

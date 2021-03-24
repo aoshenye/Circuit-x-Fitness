@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post, Comment, Whole_comment
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'slug', 'status','created_on')
@@ -19,3 +19,15 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(active=True)
+
+
+class WholecommentAdmin(admin.ModelAdmin):
+    list_display = ('user','title','content','created_on','active')
+    list_filter = ('active','created_on')
+    search_fields = ('title','content')
+    actions = ['approve_comments']
+
+    def approve_comments(self, request, queryset):
+        queryset.update(active=True)
+
+admin.site.register(Whole_comment, WholecommentAdmin)
