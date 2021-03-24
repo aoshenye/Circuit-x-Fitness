@@ -330,3 +330,9 @@ section .section-title {
     height: 120px;
     border-radius: 50%;
 }
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
