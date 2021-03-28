@@ -12,11 +12,26 @@
             {% for trainer in trainers %}
             <!-- Team member -->
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" >
-                    <div class="mainflip flip-0">
-                        <div class="frontside">
-                            <div class="card">
+                <div class="frontside">
+                        <div class="card">
                                 <div class="card-body text-center">
+                                    <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">{{ trainer.types }}</h4>
+                                    <p class="card-text">{{ trainer.description }}</p>
+                                    <h5 class="card-text">{{ trainer.price_per_hour }}</h5>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                                     {% if trainer.image %}
                                     <a href="{% url 'trainer_detail' trainer.id %}" class="btn btn-primary btn-sm">
                                     <img class=" img-fluid" src="{{ trainer.image.url }}" alt="{{ trainer.name }}">
@@ -35,27 +50,9 @@
                         <!--BACK SIDE OF CARD-->
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">{{ trainer.types }}</h4>
-                                    <p class="card-text">{{ trainer.description }}</p>
-                                    <h5 class="card-text">{{ trainer.price_per_hour }}</h5>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+
                             </div>
                         </div>
-                    </div>
-                </div>
             </div>
 
             {% endfor %}

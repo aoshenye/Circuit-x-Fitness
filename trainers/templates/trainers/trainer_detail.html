@@ -25,6 +25,40 @@
                     <p class="mb-0">{{ trainer.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">${{ trainer.price_per_hour }}</p>
                     <p class="mt-3">{{ trainer.description }}</p>
+                    <form class="form" action="{% url 'add_to_bag' trainer.id %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class='col-sm-6'>
+                                        <div class="form-group">
+                                            <div class='input-group date' id='datetimepicker1'>
+                                                <input type='text' class="form-control"/>
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            $('#datetimepicker1').datetimepicker();
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <a href="{% url 'trainers' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                    <span class="icon">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="text-uppercase">Add more training?</span>
+                                </a>
+                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                            </div>
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        </div>
+                    </form>
                 </div>           
         </div>
     </div>   
