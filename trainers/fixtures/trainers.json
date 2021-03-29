@@ -7,7 +7,7 @@
       "types": "Full Body workout",
       "description": "Total body workout with a focus on strength that will leave you lean and buff!",
       "price_per_hour": "20"
-    }
+     }
   },
   {
     "pk": 2,
@@ -17,7 +17,7 @@
       "types": "HIT",
       "description": "Early morning Hit class to wake you up before the day starts and after for those with busier schedules. Ebony combines calisthenics with short but sharp workouts. Join in with Ebony!",
       "price_per_hour": "25"
-    }
+  }
   },
   {
     "pk": 3,
@@ -27,7 +27,7 @@
       "types": "CORE",
       "description": "core blasters for your abs short and sweet but effective training with Kim which will leave you with a rock hard core and blasted abs. Jump in with Kim!",
       "price_per_hour": "25"
-    }
+  }
   },
     {
     "pk": 4,
@@ -37,7 +37,7 @@
       "types": "Calisthenics",
       "description": "Full body Calisthenics with Yin. She has 5 years experience and will challeneg what you think your body can do. Join her on the journey",
       "price_per_hour": "25"
-    }
+   }
   },
       {
     "pk": 5,
@@ -47,7 +47,7 @@
       "types": "CORE",
       "description": "core blasters for your abs short and sweet",
       "price_per_hour": "19"
-    }
+   }
   },
   {
     "pk": 6,

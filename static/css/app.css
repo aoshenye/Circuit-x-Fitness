@@ -62,9 +62,10 @@
     color: #000 !important;
 }
 
+/*ABOUT US*/
 .main-content-about-us {
     min-height: 100vh;
-    background-image: url(../media/aboutusback.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/aboutusback.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
