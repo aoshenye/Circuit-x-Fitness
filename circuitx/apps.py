@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class CircuitxConfig(AppConfig):
+class circuitxConfig(AppConfig):
     name = 'circuitx'
