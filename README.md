@@ -112,10 +112,9 @@ Testing took place using:
  20.Then run login for heroku
  20. then heroku config:set DISABLE_COLLECSTATIC=1 --app circuitx
  21. got to settings.py and on AllOWED HOSTS type in 'circuitx.herokuapp.com', 'localhost'
- 22. 
 
 
-### Final of Deployment 
+### Final part of Deployment 
 	1. Link git hub repository to Heroku
 			-click Deploy
 			- got to App connected to GitHub
@@ -151,7 +150,8 @@ Checkout app was inspired by the Boutique Ado project and the use of Stripe was 
 - Colours schemes were influenced using [Coolors](https://coolors.co/palettes/trending)
 ### Acknowledgements
 - [StackEdit for the readme](https://stackedit.io/app#)
-- [Moqups for the mockups](https://app.moqups.com/#)
+- [Smart mockups for the mockups](https://smartmockups.com/mockups)
+- [Wireframes](https://app.moqups.com/)
 
 -   I received inspiration for this project from code institutes Boutique Ado mini project Checkout and Stripe Payments use. [Boutiqe Ado - Mini Project](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/?activate_block_id=block-v1%3ACodeInstitute%2BFSF_102%2BQ1_2020%2Btype%40sequential%2Bblock%40d3188bf68530497aa5fba55d07a9d7d7)
 - [Stripe](https://dashboard.stripe.com/test/dashboard) was used to test out and as the preferred payment option for this project as well. 
