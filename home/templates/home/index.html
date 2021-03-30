@@ -29,14 +29,15 @@
                 <img src="/static/media/yin.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Yin</h5>
-                    <p class="card-text">Excellent Pilates and kettle balls specialist. Check out her profile to see pricing and schedule some time with her. </p>
+                    <p class="card-text">Excellent Pilates and kettle balls specialist. Check out her profile to see
+                        pricing and schedule some time with her. </p>
                 </div>
             </div>
             <div class="card">
                 <img src="/static/media/kim.jpg" class="card-img-top" alt="..." width="300" height="450">
                 <div class="card-body">
                     <h5 class="card-title">Kim</h5>
-                    <p class="card-text">Kim is tough but fair and a result getter!! Her focus is on core workouts. 
+                    <p class="card-text">Kim is tough but fair and a result getter!! Her focus is on core workouts.
                     </p>
                 </div>
             </div>
@@ -45,32 +46,34 @@
                 <img src="/static/media/Nina.JPG" alt="Nina">
                 <div class="card-body">
                     <h5 class="card-title">Nina</h5>
-                    <p class="card-text">Jump into Nina's arena where you will be tested mentally as well as phsyically</p>
+                    <p class="card-text">Jump into Nina's arena where you will be tested mentally as well as phsyically
+                    </p>
                 </div>
             </div>
         </div>
         <div class="row py-5">
             <div class="col-12 text-center">
-                <a class="btn btn-dark w-100" href="{% url 'trainers' %}">View all</a> <!---Link to the full trainers page--->
+                <a class="btn btn-dark w-100" href="{% url 'trainers' %}">View all</a>
+                <!---Link to the full trainers page--->
             </div>
         </div>
         <div class="row py-5">
             <div class="col-12 text-center">
                 <h2>All comments</h2>
                 {% for comment in comment_all %}
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ comment.title }}</h5>
-                                <p class="card-text">{{ comment.content }}</p>
-                                <p class="card-text"><b>{{ comment.user }}</b>&nbsp;<small class="text-muted">{{  comment.created_on }}</small></p>
-                            </div>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ comment.title }}</h5>
+                            <p class="card-text">{{ comment.content }}</p>
+                            <p class="card-text"><b>{{ comment.user }}</b>&nbsp;<small
+                                    class="text-muted">{{  comment.created_on }}</small></p>
                         </div>
                     </div>
+                </div>
                 {% endfor %}
             </div>
         </div>
     </div>
 </section>
 {% endblock %}
-

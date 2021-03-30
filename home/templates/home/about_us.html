@@ -3,63 +3,68 @@
 {% load static %}
 
 {% block header %}
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
-            <ul class="navbar-nav left-side">
-                <li class="nav-item">
-                    <a class="nav-link pl-0" href="{%  url 'home' %}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about_us' %}">About us</a>
-                </li>
-                <li class="nav-item">
-                <a  class="nav-link" href="{% url 'products' %}">Shop</a>
-                </li> 
-                <li class="nav-item">
-                <a  class="nav-link" href="{% url 'trainers' %}">Trainers</a>
-                </li>              
-            </ul>
-        </div>
-        <a href="{% url 'about_us' %}" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25 brand-logo">ABOUT US</a>
-        <div class="navbar-collapse collapse dual-nav w-50 order-2 navbar-right-side">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item nav-button-sign-in-up"><a class="nav-link" href="{% url 'signin' %}">Sign in</a></li>
-                <li class="nav-item nav-button-sign-in-up"><a class="nav-link" href="{% url 'sign_up' %}">Sign up</a></li>
-            </ul>
-        </div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
+    <ul class="navbar-nav left-side">
+        <li class="nav-item">
+            <a class="nav-link pl-0" href="{%  url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'about_us' %}">About us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'products' %}">Shop</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'trainers' %}">Trainers</a>
+        </li>
+    </ul>
+</div>
+<a href="{% url 'about_us' %}" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25 brand-logo">ABOUT
+    US</a>
+<div class="navbar-collapse collapse dual-nav w-50 order-2 navbar-right-side">
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item nav-button-sign-in-up"><a class="nav-link" href="{% url 'signin' %}">Sign in</a></li>
+        <li class="nav-item nav-button-sign-in-up"><a class="nav-link" href="{% url 'sign_up' %}">Sign up</a></li>
+    </ul>
+</div>
 {% endblock %}
 
 {% block page %}
-    <div class="container-fluid main-content-about-us">
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <h4>If you are looking to get summer body ready or just looking for a workout to meet your New Years resolutions, Circuit X is your one-stop-shop for amazingly skilled and creative Personal trainers who will not only train you, but also guide you on nutrition and recommendations from our online shop. So sign up and Lets get going!</h4><br>
-                <h4>Choose from a list of Personal Trainers, contact them to arrange your session and then leave a comment on the site to tell us how the session was!</h4><br>
-                <h4>So why dont you signed up, get suited, and get ready for an elevated way of working out.</h4><br>
-                <h4> We started this project in 2018 as a circuit trainning class in London and have now grown to more
-                    than 200 members. Sign up and join in the development.<br>
-                    You can contact us below for any questions.</h4><br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-                <form action="">
-                    <div class="form-group">
-                       <textarea class="form-control" rows="5" id="comment" placeholder="Comment text box"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Email text box" name="email">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="Name box" name="name">
-                    </div>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
-            </div>
+<div class="container-fluid main-content-about-us">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <h4>If you are looking to get summer body ready or just looking for a workout to meet your New Years
+                resolutions, Circuit X is your one-stop-shop for amazingly skilled and creative Personal trainers who
+                will not only train you, but also guide you on nutrition and recommendations from our online shop. So
+                sign up and Lets get going!</h4><br>
+            <h4>Choose from a list of Personal Trainers, contact them to arrange your session and then leave a comment
+                on the site to tell us how the session was!</h4><br>
+            <h4>So why dont you signed up, get suited, and get ready for an elevated way of working out.</h4><br>
+            <h4> We started this project in 2018 as a circuit trainning class in London and have now grown to more
+                than 200 members. Sign up and join in the development.<br>
+                You can contact us below for any questions.</h4><br>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <form action="">
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment text box"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email text box" name="email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Name box" name="name">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}

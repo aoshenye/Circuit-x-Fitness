@@ -4,33 +4,25 @@
 
 {% block page %}
 <div class="container">
-  <div class="row">
+    <div class="row">
 
-    <div class="col-md-12 card mb-4  mt-3 ">
-      <div class="card-body">
-        {% if new_comment %}
-        <div class="alert alert-success" role="alert">
-          Your comment is awaiting moderation
+        <div class="col-md-12 card mb-4  mt-3 ">
+            <div class="card-body">
+                {% if new_comment %}
+                <div class="alert alert-success" role="alert">
+                    Your comment is awaiting moderation
+                </div>
+                {% else %}
+                <h3>Edit a comment</h3>
+                <form method="post" style="margin-top: 1.3em;">
+                    {% csrf_token %}
+                    {{ comment_item.as_p }}
+                    <button type="submit" class="btn btn-primary  btn-sm">Edit Comment</button>
+                    <a href="/profile" class="btn btn-default btn-sm">Cancel</a>
+                </form>
+                {% endif %}
+            </div>
         </div>
-        {% else %}
-        <h3>Edit a comment</h3>
-        <form method="post" style="margin-top: 1.3em;">
-          {% csrf_token %}
-           {{ comment_item.as_p }}
-          <button type="submit" class="btn btn-primary  btn-sm">Edit Comment</button>
-          <a href="/profile" class="btn btn-default btn-sm">Cancel</a>
-        </form>
-        {% endif %}
-      </div>
     </div>
-  </div>
 </div>
 {% endblock %}
-
-
-
-
-
-
-
-

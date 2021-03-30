@@ -26,7 +26,7 @@ SECRET_KEY = 'e(25kr3yt=a3o41k%(2+*e*v!1(=*g0c3&t8v!+04ev&v3l@8d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['circuitx_herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['circuitx.herokuapp.com', 'localhost']
 
 
 # Application definition
