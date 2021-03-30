@@ -26,7 +26,8 @@ SECRET_KEY = 'e(25kr3yt=a3o41k%(2+*e*v!1(=*g0c3&t8v!+04ev&v3l@8d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['circuitx_herokuapp.com', 'localhost']
+
 
 # Application definition
 
@@ -112,12 +113,17 @@ WSGI_APPLICATION = 'django_circuitx.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-   'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else: 
+    DATABASES = {
+    'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
