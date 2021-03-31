@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
@@ -9,6 +10,7 @@ from trainers.models import Trainer
 from bag.contexts import bag_contents
 
 import stripe
+import json
 
 
 def checkout(request):
