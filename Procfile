@@ -1,1 +1,1 @@
-web: gunicorn circuitx.wsgi:application
+web: gunicorn django_circuitx.wsgi:application
