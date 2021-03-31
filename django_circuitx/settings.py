@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = os.environ.get('SECRET_KEY', ')kuu-o0df2qsbd41-i&-^xtsh4g5s#+)vb_5^axa%mi^-42m+-')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG ='DEVELOPMENT' in os.environ
@@ -209,5 +209,6 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'gbp'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51IZ32hDrwFUAuTpufeaUSGj2R18yzRCpX0Lij5CxnPnKnnBhHTtrtlQDd87xk9wnwk7aTCyPbrqnTXNVXKPlo6C300vUNcgAik')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51IZ32hDrwFUAuTpubbxRNHgKkcbDcTJoiLr4yws6TPpzLBI5beRGP6BlZL91I4Ag5Mw8kR13khiiakGNEoprnqz50056wBKgoJ')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
