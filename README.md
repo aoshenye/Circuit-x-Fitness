@@ -88,6 +88,12 @@ Testing took place using:
 
 	- Google pixel 5a using Google Chrome on Android 10 iphone xr using Safari on IOS 13.4.1 
 
+Issues occured with deployment that relate to the webhooks product=ing a 403 error. Attempts were made to rectify the issue and no suport was provided on this. Testing and working on this was on my own. 
+
+Media files have been removed  during deployment but they were added onto the AWS and are in the static and media files as you can see.  Many hours were spent creating and editing the images for use. Did not have enough time to correct the errors caused by deployment. 
+
+[circuitx](https://circuitx.herokuapp.com/) Heroku
+
 ## Deployment new
 
  1. log in to heroku
