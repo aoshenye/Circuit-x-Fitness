@@ -64,7 +64,7 @@ User Stories:
 	- **Bootstrap** - creating the layout of the pages, navigation bar and footer.
 		- Crispy FORMS - For the forms used
 	- **Django** for the overall set up and use of templates. 
-	- **SQLLITE** for relational database 
+	- **Postgress** for relational database 
 	- **Stripe** for payments
 	
 
